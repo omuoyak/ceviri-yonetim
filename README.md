@@ -1,5 +1,7 @@
 # Çok Kullanıcılı Çeviri Yönetim Sistemi
-========================================
+
+[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/omu-oyak/ceviri-yonetim/master/LICENSE)
+[![OMÜ Özgür Yazılım ve Açık Kaynak Topluluğu](https://img.shields.io/badge/OM%C3%9C-%C3%96YAK-red.svg)](https://github.com/omu-oyak)
 
 Güncellenen kaynaklar için çeviri yönetim sistemi
 
@@ -8,30 +10,30 @@ tarafından yürütülen bir proje!
 
 ## Temel Özellikler
 
-GitHub'a tam entegrasyon
+-> GitHub'a tam entegrasyon
 
-GitHub'daki kaynak repodan doğrudan bilgi çek
+-> GitHub'daki kaynak repodan doğrudan bilgi çek
 
-GitHub'da repo oluştur
+-> GitHub'da repo oluştur
 
-GitHub reposu ile senkronize çalış
+-> GitHub reposu ile senkronize çalış
 
-Kaynak repodaki değişiklikleri al
+-> Kaynak repodaki değişiklikleri al
 
-Kaynak repoya çeviriyi bildiren Issue aç
+-> Kaynak repoya çeviriyi bildiren Issue aç
 
-Çeviriyi bir alt dizinde yönet
+-> Çeviriyi bir alt dizinde yönet
 
-Kaynak metni ilgili başlıklara parçala
+-> Kaynak metni ilgili başlıklara parçala
 
-Her başlık için yeni çeviri dosyası oluştur
+-> Her başlık için yeni çeviri dosyası oluştur
 
-Çeviriyi yapan kişinin GitHub hesabına bağlan
+-> Çeviriyi yapan kişinin GitHub hesabına bağlan
 
-Yapılan çevirileri ilk olarak Kontrol listesine ekle
+-> Yapılan çevirileri ilk olarak Kontrol listesine ekle
 
-Repo yetkilisinin onayıyla Kontrol listesindeki değişiklikleri kabul et
+-> Repo yetkilisinin onayıyla Kontrol listesindeki değişiklikleri kabul et
 
-Çeviri yüzdelerini hesapla ve otomatik güncelle
+-> Çeviri yüzdelerini hesapla ve otomatik güncelle
 
-Her kullanıcının ne kadar çeviri yaptığını hesapla
+-> Her kullanıcının ne kadar çeviri yaptığını hesapla
