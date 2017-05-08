@@ -5,7 +5,7 @@
 
 Güncellenen kaynaklar için çeviri yönetim sistemi
 
-**Ondokuz Mayıs Üniversitesi Özgür Yazılım ve Açık Kaynak Topluluğu** 
+**Ondokuz Mayıs Üniversitesi Özgür Yazılım ve Açık Kaynak Topluluğu**
 tarafından yürütülen bir proje!
 
 ## Temel Özellikler
@@ -37,3 +37,14 @@ tarafından yürütülen bir proje!
  - Çeviri yüzdelerini hesapla ve otomatik güncelle
 
  - Her kullanıcının ne kadar çeviri yaptığını hesapla
+
+ - Çeviri önerileri
+
+ - Bir bölümün birden fazla kişi tarafından çevrilmesi durumunda oylamaya sunulabilmesi
+
+ - API Desteği
+
+
+## Front
+
+  - https://github.com/akveo/ng2-admin
