@@ -26,7 +26,7 @@ tarafından yürütülen bir proje!
 
  - Kaynak metni ilgili başlıklara parçala
 
- -  Her başlık için yeni çeviri dosyası oluştur
+ - Her başlık için yeni çeviri dosyası oluştur
 
  - Çeviriyi yapan kişinin GitHub hesabına bağlan
 
@@ -47,4 +47,17 @@ tarafından yürütülen bir proje!
 
 ## Front
 
-  - https://github.com/akveo/ng2-admin
+- https://adminlte.io/themes/AdminLTE/index2.html
+
+
+## Araç Seti
+
+- https://github.com/rails/rails
+
+- https://github.com/rmosolgo/graphql-ruby
+
+- https://github.com/piotrmurach/github 
+
+- https://github.com/shioyama/mobility
+
+- http://ionicframework.com/docs/intro/installation/
