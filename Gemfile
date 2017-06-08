@@ -1,1 +1,1 @@
-gem 'github'
+gem "octokit", "~> 4.0"
