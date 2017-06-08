@@ -1,0 +1,27 @@
+GEM
+  specs:
+    addressable (2.2.8)
+    github (0.7.2)
+      highline (~> 1.6)
+      json_pure (~> 1.5.1)
+      launchy (~> 2.0.2)
+      text-format (= 1.0.0)
+      text-hyphen (= 1.0.0)
+    highline (1.7.8)
+    json_pure (1.5.5)
+      spruz (~> 0.2.8)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
+    spruz (0.2.13)
+    text-format (1.0.0)
+      text-hyphen (~> 1.0.0)
+    text-hyphen (1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  github
+
+BUNDLED WITH
+   1.14.6
