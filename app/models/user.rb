@@ -2,7 +2,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:github, :google_oauth2]
+         :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:github]
 
   has_many :authorizations, dependent: :destroy
 
@@ -19,6 +19,7 @@ class User < ApplicationRecord
  end
 
  # Omniauth authorize or create user
+ # TODO: Profile picture and username should
  def self.from_omniauth(auth, current_user)
    authorization = Authorization.where(:provider => auth.provider, :uid => auth.uid.to_s, :token => auth.credentials.token, :secret => auth.credentials.secret).first_or_initialize
    if authorization.user.blank?
@@ -36,7 +37,8 @@ class User < ApplicationRecord
    authorization.user
  end
 
- private
+  private
+
   def password_required?
     self.authorizations.size < 1 && super
   end

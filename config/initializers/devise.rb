@@ -27,7 +27,6 @@ Devise.setup do |config|
   require 'devise/orm/active_record'
 
   config.omniauth :github, 'fbf9c773ba8c0b3932c7', '5b55e573c9b9177f1a025817f5b52bb038b591fe', scope: "user, public_repo"
-  config.omniauth :google_oauth2, '456726219411-dofev8sieghqfap0td6bpr1158m87th9.apps.googleusercontent.com', '5xqiFog4TuHHOoDWh-uquO0T', {}
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
