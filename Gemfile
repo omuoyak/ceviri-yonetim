@@ -35,10 +35,10 @@ gem 'better_errors'
 gem 'devise'
 gem 'slim'
 
+# GitHub ile Giriş
 gem 'omniauth'
 gem 'omniauth-oauth2'
 gem 'omniauth-github'
-gem 'omniauth-google-oauth2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
