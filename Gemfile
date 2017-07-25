@@ -30,7 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'pry'
+gem 'better_errors'
 gem 'devise'
+gem 'slim'
 
 
 # Use Capistrano for deployment
