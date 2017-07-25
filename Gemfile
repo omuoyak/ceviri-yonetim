@@ -31,9 +31,22 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'pry'
+
+# Daha güzel Hata sayfaları
 gem 'better_errors'
+
+# Kullanıcı işlemleri
 gem 'devise'
+
+# Slim şablonu (html yerine) 
 gem 'slim'
+
+# Formlar için
+gem 'simple_form'
+
+# Bootstrap SaSS
+gem 'bootstrap-sass'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 # GitHub ile Giriş
 gem 'omniauth'
