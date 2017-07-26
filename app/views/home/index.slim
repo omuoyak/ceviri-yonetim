@@ -3,3 +3,7 @@
   =link_to 'Login', new_user_session_path
 -else
   =link_to 'Çıkış', destroy_user_session_path, :method => :delete
+  hr
+  =current_user.profile.inspect
+  br
+  =image_tag(current_user.profile.picture) if current_user.profile.picture
