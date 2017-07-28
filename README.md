@@ -8,18 +8,21 @@ Güncellenen kaynaklar için çeviri yönetim sistemi
 **Ondokuz Mayıs Üniversitesi Özgür Yazılım ve Açık Kaynak Topluluğu**
 tarafından yürütülen bir proje!
 
-## Temel Özellikler
-
+## Tamamlanan Özellikler
  - GitHub'a tam entegrasyon
 
+## Üzerinde Çalışılan Özellikler
+ - Kolay kullanılabilir kullanıcı profili
+
+## Eklenecek Özellikler
  - GitHub'daki kaynak repodan doğrudan bilgi çek
-
+ 
  - GitHub'da repo oluştur
-
+ 
  - GitHub reposu ile senkronize çalış
-
+ 
  - Kaynak repodaki değişiklikleri al
-
+ 
  - Kaynak repoya çeviriyi bildiren Issue aç
 
  - Çeviriyi bir alt dizinde yönet
@@ -44,11 +47,9 @@ tarafından yürütülen bir proje!
 
  - API Desteği
 
-
-## Front
+## Önyüzde Kullanılan / Kullanılacak Araçlar
 
 - https://adminlte.io/themes/AdminLTE/index2.html
-
 
 ## Araç Seti
 
