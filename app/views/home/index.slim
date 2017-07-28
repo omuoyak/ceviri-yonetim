@@ -1,9 +1,6 @@
 |Welcome Home
+p
 -unless user_signed_in?
-  =link_to 'Login', new_user_session_path
+  =render 'guest'
 -else
-  =link_to 'Çıkış', destroy_user_session_path, :method => :delete
-  hr
-  =current_user.profile.inspect
-  br
-  =image_tag(current_user.profile.picture) if current_user.profile.picture
+  =render 'member'
