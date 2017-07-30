@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @translation.name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @translation.status %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @translation.owner %>
+</p>
+
+<p>
+  <strong>Source url:</strong>
+  <%= @translation.source_url %>
+</p>
+
+<p>
+  <strong>Contributors:</strong>
+  <%= @translation.contributors %>
+</p>
+
+<p>
+  <strong>Source lang:</strong>
+  <%= @translation.source_lang %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @translation.priority %>
+</p>
+
+<p>
+  <strong>Original content:</strong>
+  <%= @translation.original_content %>
+</p>
+
+<p>
+  <strong>Translated contents:</strong>
+  <%= @translation.translated_contents %>
+</p>
+
+<%= link_to 'Edit', edit_translation_path(@translation) %> |
+<%= link_to 'Back', translations_path %>

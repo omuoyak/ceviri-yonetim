@@ -1,0 +1,62 @@
+<%= form_with(model: translation, local: true) do |form| %>
+  <% if translation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(translation.errors.count, "error") %> prohibited this translation from being saved:</h2>
+
+      <ul>
+      <% translation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :translation_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status, id: :translation_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :owner_id %>
+    <%= form.text_field :owner_id, id: :translation_owner_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_url %>
+    <%= form.text_field :source_url, id: :translation_source_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contributors_id %>
+    <%= form.text_field :contributors_id, id: :translation_contributors_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_lang %>
+    <%= form.text_field :source_lang, id: :translation_source_lang %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.number_field :priority, id: :translation_priority %>
+  </div>
+
+  <div class="field">
+    <%= form.label :original_content_id %>
+    <%= form.text_field :original_content_id, id: :translation_original_content_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :translated_contents_id %>
+    <%= form.text_field :translated_contents_id, id: :translation_translated_contents_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
