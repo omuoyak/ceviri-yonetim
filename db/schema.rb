@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726200216) do
+ActiveRecord::Schema.define(version: 20170730204637) do
 
   create_table "authorizations", force: :cascade do |t|
     t.string "provider"
@@ -34,6 +34,24 @@ ActiveRecord::Schema.define(version: 20170726200216) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
+  create_table "translations", force: :cascade do |t|
+    t.string "name"
+    t.integer "status"
+    t.integer "owner_id"
+    t.string "source_url"
+    t.integer "contributors_id"
+    t.string "source_lang"
+    t.integer "priority"
+    t.integer "original_content_id"
+    t.integer "translated_contents_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["contributors_id"], name: "index_translations_on_contributors_id"
+    t.index ["original_content_id"], name: "index_translations_on_original_content_id"
+    t.index ["owner_id"], name: "index_translations_on_owner_id"
+    t.index ["translated_contents_id"], name: "index_translations_on_translated_contents_id"
   end
 
   create_table "users", force: :cascade do |t|
