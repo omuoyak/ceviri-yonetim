@@ -1,1 +1,20 @@
-=link_to 'Login', new_user_session_path
+div class="panel-group"
+  div class="panel panel-default"
+    div class="panel-heading"
+       | Çeviri Yönetim Sistemine Giriş Yap
+
+    div class="panel-body"
+        p
+        | Çeviri Yönetim Sistemine Hoşgeldiniz
+        p
+        | README ler, AWESOME ler ve diğer Markdown tipi dokümanları 
+        | kolaylıkla çevirmenizi sağlayan bu araç sayesinde birden çok 
+        | içerik üzerinde eş zamanlı olarak ekip halinde çevirilerinizi 
+        | yürütebilirsiniz!
+        p
+        | Sistem GitHub'a tam entegre olarak kuruludur. Tüm işlemlerinizi 
+        | GitHub üyeliğiniz saysinde istediğiniz cihazdan kolaylıkla 
+        | gerçekleştirebilirsiniz!
+        div class="btn-group btn-group-justified"
+          =link_to 'GitHub ile Giriş Yap', new_user_session_path, class: 'btn btn-success'
+
