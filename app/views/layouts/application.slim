@@ -7,8 +7,13 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    p.notice
-      = notice
-    p.alert
-      = alert
-    = yield
+    = render 'shared/alerts'
+    
+    = render 'shared/header'
+    
+    = render 'shared/menu'
+    
+    div class="container"
+      = yield
+    
+    = render 'shared/footer'
