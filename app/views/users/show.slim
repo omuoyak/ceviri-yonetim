@@ -1,0 +1,4 @@
+-if current_user.id == @User.id
+  =link_to 'Düzenle', edit_user_profile_path(current_user), class:"btn btn-warning"
+=@User.inspect
+=@User.profile.inspect
