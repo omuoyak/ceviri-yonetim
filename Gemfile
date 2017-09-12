@@ -32,13 +32,16 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'pry'
 
+# .active link
+gem 'active_link_to'
+
 # Daha güzel Hata sayfaları
 gem 'better_errors'
 
 # Kullanıcı işlemleri
 gem 'devise'
 
-# Slim şablonu (html yerine) 
+# Slim şablonu (html yerine)
 gem 'slim'
 
 # Formlar için
