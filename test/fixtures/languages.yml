@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  iso_code: MyString
+  title: MyString
+  flag: MyString
+
+two:
+  iso_code: MyString
+  title: MyString
+  flag: MyString

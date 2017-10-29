@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170912212304) do
+ActiveRecord::Schema.define(version: 20171029173739) do
 
   create_table "authorizations", force: :cascade do |t|
     t.string "provider"
@@ -21,6 +21,26 @@ ActiveRecord::Schema.define(version: 20170912212304) do
     t.datetime "updated_at", null: false
     t.string "uid"
     t.index ["user_id"], name: "index_authorizations_on_user_id"
+  end
+
+  create_table "issues", force: :cascade do |t|
+    t.integer "repository_id"
+    t.string "title"
+    t.text "detail"
+    t.string "label"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["repository_id"], name: "index_issues_on_repository_id"
+    t.index ["user_id"], name: "index_issues_on_user_id"
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string "iso_code"
+    t.string "title"
+    t.string "flag"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -36,22 +56,44 @@ ActiveRecord::Schema.define(version: 20170912212304) do
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
-  create_table "translations", force: :cascade do |t|
+  create_table "repositories", force: :cascade do |t|
     t.string "name"
-    t.integer "status"
-    t.integer "owner_id"
     t.string "source_url"
-    t.integer "contributors_id"
-    t.string "source_lang"
     t.integer "priority"
-    t.integer "original_content_id"
-    t.integer "translated_contents_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["contributors_id"], name: "index_translations_on_contributors_id"
-    t.index ["original_content_id"], name: "index_translations_on_original_content_id"
-    t.index ["owner_id"], name: "index_translations_on_owner_id"
-    t.index ["translated_contents_id"], name: "index_translations_on_translated_contents_id"
+    t.index ["user_id"], name: "index_repositories_on_user_id"
+  end
+
+  create_table "repository_languages", force: :cascade do |t|
+    t.integer "language_id"
+    t.integer "repository_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["language_id"], name: "index_repository_languages_on_language_id"
+    t.index ["repository_id"], name: "index_repository_languages_on_repository_id"
+  end
+
+  create_table "tfiles", force: :cascade do |t|
+    t.integer "repository_id"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["repository_id"], name: "index_tfiles_on_repository_id"
+  end
+
+  create_table "translations", force: :cascade do |t|
+    t.integer "tfile_id"
+    t.integer "language_id"
+    t.integer "user_id"
+    t.integer "status"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["language_id"], name: "index_translations_on_language_id"
+    t.index ["tfile_id"], name: "index_translations_on_tfile_id"
+    t.index ["user_id"], name: "index_translations_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

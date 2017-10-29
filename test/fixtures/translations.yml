@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tfile: one
+  language: one
+  user: one
+  status: 1
+  content: MyText
+
+two:
+  tfile: two
+  language: two
+  user: two
+  status: 1
+  content: MyText
