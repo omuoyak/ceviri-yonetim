@@ -39,7 +39,7 @@ gem 'active_link_to'
 gem 'better_errors'
 
 # Kullanıcı işlemleri
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 
 # Slim şablonu (html yerine)
 gem 'slim'
