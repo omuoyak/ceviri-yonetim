@@ -39,7 +39,7 @@ gem 'active_link_to'
 gem 'better_errors'
 
 # Kullanıcı işlemleri
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 
 # Slim şablonu (html yerine)
 gem 'slim'
@@ -48,7 +48,7 @@ gem 'slim'
 gem 'simple_form'
 
 # Bootstrap SaSS
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '>= 3.4.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 # GitHub ile Giriş
